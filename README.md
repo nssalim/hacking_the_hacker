@@ -14,7 +14,7 @@
 <ul>use JSON to encode said message over the internet.</ul>
 
 <p>update The Spider's "passwords.csv" file to scramble the compromised usernames and passwords.</p>
-<p>add the signature of Glow Worm, a different hacker who could be halted by The Spider if they viewed Glow Worm as a threat.</p>
+<p>hide trail and pin on rival hacker.  Add the signature of Glow Worm, a different hacker who could be halted by The Spider if they viewed Glow Worm as a threat.</p>
 
 
 
