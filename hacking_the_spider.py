@@ -30,12 +30,12 @@
 # elizabeth19,x3C8yYtI!(e3+z(
 
 # Mission
-# 1. acquire access to The Spider's systems and read compromised usernames and passwords stored in a file called "passwords.csv"
-# 2. update The Spider's "passwords.csv" file to scramble the secret data.
+# 1. access The Spider's systems and read compromised usernames and passwords stored in a file called "passwords.csv".  Safely recover said usernames to a list (compromised_users.txt)
+# 2. update The Spider's "passwords.csv" file to scramble the compromised usernames and passwords.
 # 3. add the signature of Glow Worm, a different hacker who could be halted by The Spider if they viewed Glow Worm as a threat.
 
 # Mission 1
-# Reading In The Passwords
+# Safely recover compromised users.
 # Write a program able to read compromised usernames and passwords stored in a file called "passwords.csv" on The Spider's machine.
 import csv
 import json
@@ -60,7 +60,7 @@ with open ('compromised_users.txt', 'w') as compromised_user_file:
     compromised_user_file.write(compromised_user)
 # output
 # compromised_users.txt file is created (and contains username of each compromise user)
-
+# jean49haydenashleymichaelastephensdenisephillipsandrew24kaylaabbotttmartinezmholdenrandygilbertwatsonlouismdavispatrickpricekgriffithhannasarahxaviermartinhrodriguezerodriguezdanielleclarktimothy26elizabeth19
 
 # Notify the Boss
 # advise success in retrieving compromised data.
@@ -77,12 +77,12 @@ with open('boss_message.json', 'w') as boss_message:
 # {"recipient": "The Boss", 
 # "message": "Mission Success"})
 
-# Mission 2
-# Scrambling the Password
-# after safely recovering the compromised users, completely remove the "passwords.csv" file.
+# Mission 2 and Mission 3
+# Scrambling the compromised usernames and passwords.
+# step 1
 with open("new_passwords.csv", "w") as new_passwords_obj:
   
-# Mission 3
+# step 2
 # Hide trail and pin rival hacker, Glow Worm as person behind this attack. Add Glow Worm's signature:-
   glow_worm_sig = """
   
@@ -108,8 +108,11 @@ ____    ____
 
 """
 
-# Write glow_worm_sig to new_passwords_obj. Now we have the file to replace passwords.csv with
+# Write glow_worm_sig to new_passwords_obj. 
   new_passwords_obj.write(glow_worm_sig)
 # output
-# new_password.csv file is created (and content is:- you got hacked gw)
+# new_passwords.csv file is created (and content is:- you got hacked gw)
 
+# step 3
+# new_passwords.csv can now replace passwords.csv.
+# remove passwords.csv
