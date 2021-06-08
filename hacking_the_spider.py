@@ -59,4 +59,35 @@ with open('boss_message.json', 'w') as boss_message:
 # Scrambling the Password
 # after safely recovering the compromised users, completely remove the "passwords.csv" file.
 with open("new_passwords.csv", "w") as new_passwords_obj:
-    
+
+  
+# Mission 3
+# Hide trail and pin rival hacker, Glow Worm as person behind this attack. Add Glow Worm's signature:-
+  glow_worm_sig = """
+  
+ _  _     ___   __  ____             
+/ )( \   / __) /  \(_  _)            
+) \/ (  ( (_ \(  O ) )(              
+\____/   \___/ \__/ (__)             
+ _  _   __    ___  __ _  ____  ____  
+/ )( \ / _\  / __)(  / )(  __)(    \ 
+) __ (/    \( (__  )  (  ) _)  ) D ( 
+\_)(_/\_/\_/ \___)(__\_)(____)(____/  
+
+  ___ 
+ / __)
+( (_ \(
+ \___/
+
+____    ____
+(  )     ( )
+/ (_/\/\_) \
+\____/\____/
+
+
+"""
+
+# Write glow_worm_sig to new_passwords_obj. Now we have the file to replace passwords.csv with
+  new_passwords_obj.write(glow_worm_sig)
+# output
+# new_password.csv file is created (and content is:- you got hacked gw
